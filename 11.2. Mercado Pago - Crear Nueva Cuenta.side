@@ -1,0 +1,382 @@
+{
+  "id": "eb54d0a4-421c-4fcd-a867-052f33977fd7",
+  "version": "2.0",
+  "name": "Mercado Pago",
+  "url": "https://www.mercadopago.com.mx",
+  "tests": [{
+    "id": "1fd7feee-1df6-42e4-96af-1a0192a692f3",
+    "name": "Mercado Pago - Crear Nueva Cuenta",
+    "commands": [{
+      "id": "d98407d9-e2b3-4c41-845e-ae9b472ad8c9",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d65849f2-1cd3-4067-b1db-1cd4694a768d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d944fae5-58da-4d80-ac92-01128fbf7785",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Abrir cuenta gratis",
+      "targets": [
+        ["linkText=Abrir cuenta gratis", "linkText"],
+        ["css=.nav-header-guest__link--registration", "css:finder"],
+        ["xpath=//a[contains(text(),'Abrir cuenta gratis')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://www.mercadopago.com.mx/hub/registration/landing')]", "xpath:href"],
+        ["xpath=//nav/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Abrir cuenta gratis')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8afc9ac-1647-404f-880c-521eebcef3c0",
+      "comment": "",
+      "command": "click",
+      "target": "css=#\\3AR76p\\3A > .andes-button__content",
+      "targets": [
+        ["css=#\\3AR76p\\3A > .andes-button__content", "css:finder"],
+        ["xpath=//button[@id=':R76p:']/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Crear cuenta personal')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "17d2d847-a97f-46c2-9d11-ddce426bf2dd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.andes-button__text",
+      "targets": [
+        ["css=.andes-button__text", "css:finder"],
+        ["xpath=//button[@id='hub-item-button']/span/span", "xpath:idRelative"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a13d4640-33fc-4c6f-804f-823d09bdef8a",
+      "comment": "",
+      "command": "type",
+      "target": "id=enter-email-input",
+      "targets": [
+        ["id=enter-email-input", "id"],
+        ["name=email", "name"],
+        ["css=#enter-email-input", "css:finder"],
+        ["xpath=//input[@id='enter-email-input']", "xpath:attributes"],
+        ["xpath=//div[@id=':R59:']/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "dgutierrezr@gmail.com"
+    }, {
+      "id": "5211df32-8151-4f5e-a8e9-30e0383fe79d",
+      "comment": "",
+      "command": "click",
+      "target": "id=policies",
+      "targets": [
+        ["id=policies", "id"],
+        ["name=policies", "name"],
+        ["css=#policies", "css:finder"],
+        ["xpath=//input[@id='policies']", "xpath:attributes"],
+        ["xpath=//div[@id=':R59:']/form/div[2]/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3a96630-3cfa-4aeb-8d9f-bbfc0d4b470a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.andes-button__content",
+      "targets": [
+        ["css=.andes-button__content", "css:finder"],
+        ["xpath=//button[@id=':R1td9:']/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Continuar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff9a7242-caf0-41d8-afeb-7bff9e4d1acd",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.andes-button__content",
+      "targets": [
+        ["css=.andes-button__content", "css:finder"],
+        ["xpath=//button[@id=':R1td9:']/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Continuar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "631dc2b4-a558-4247-9ab2-7c6198dccd7a",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.andes-button__content",
+      "targets": [
+        ["css=.andes-button__content", "css:finder"],
+        ["xpath=//button[@id=':R1td9:']/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Continuar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "14f95ec9-2205-4472-880f-827b97085580",
+      "comment": "",
+      "command": "click",
+      "target": "css=.andes-button__text",
+      "targets": [
+        ["css=.andes-button__text", "css:finder"],
+        ["xpath=//button[@id='hub-item-button']/span/span", "xpath:idRelative"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a14a8037-cdee-47c6-804b-93cfadd45b1b",
+      "comment": "",
+      "command": "type",
+      "target": "id=:R1ot1:",
+      "targets": [
+        ["id=:R1ot1:", "id"],
+        ["css=#\\3AR1ot1\\3A", "css:finder"],
+        ["xpath=//input[@id=':R1ot1:']", "xpath:attributes"],
+        ["xpath=//form[@id='registration-input-phone-form']/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "5525596812"
+    }, {
+      "id": "0c863596-121f-4d58-9160-38f44ff2a085",
+      "comment": "",
+      "command": "click",
+      "target": "css=.andes-button__content",
+      "targets": [
+        ["css=.andes-button__content", "css:finder"],
+        ["xpath=//button[@id=':R38t1:']/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Continuar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "baace561-e63f-4d20-a883-ede6b992c20a",
+      "comment": "",
+      "command": "type",
+      "target": "id=:R5t1:-digit-0",
+      "targets": [
+        ["id=:R5t1:-digit-0", "id"],
+        ["css=#\\3AR5t1\\3A-digit-0", "css:finder"],
+        ["xpath=//input[@id=':R5t1:-digit-0']", "xpath:attributes"],
+        ["xpath=//div[@id=':R51:']/div/div[2]/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "9"
+    }, {
+      "id": "e50b982f-d63a-4f20-af84-eb330a1bf544",
+      "comment": "",
+      "command": "type",
+      "target": "id=:R5t1:-digit-1",
+      "targets": [
+        ["id=:R5t1:-digit-1", "id"],
+        ["css=#\\3AR5t1\\3A-digit-1", "css:finder"],
+        ["xpath=//input[@id=':R5t1:-digit-1']", "xpath:attributes"],
+        ["xpath=//div[@id=':R51:']/div/div[2]/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "43c98e40-e358-403e-8e13-f124326d5d2f",
+      "comment": "",
+      "command": "type",
+      "target": "id=:R5t1:-digit-2",
+      "targets": [
+        ["id=:R5t1:-digit-2", "id"],
+        ["css=#\\3AR5t1\\3A-digit-2", "css:finder"],
+        ["xpath=//input[@id=':R5t1:-digit-2']", "xpath:attributes"],
+        ["xpath=//div[@id=':R51:']/div/div[2]/div/div/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": "4"
+    }, {
+      "id": "d9b35477-b719-427a-b0c9-640086546da2",
+      "comment": "",
+      "command": "type",
+      "target": "id=:R5t1:-digit-3",
+      "targets": [
+        ["id=:R5t1:-digit-3", "id"],
+        ["css=#\\3AR5t1\\3A-digit-3", "css:finder"],
+        ["xpath=//input[@id=':R5t1:-digit-3']", "xpath:attributes"],
+        ["xpath=//div[@id=':R51:']/div/div[2]/div/div/div[4]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/input", "xpath:position"]
+      ],
+      "value": "5"
+    }, {
+      "id": "c947158b-f104-4f76-82cd-775a56748925",
+      "comment": "",
+      "command": "click",
+      "target": "css=.andes-button__content",
+      "targets": [
+        ["css=.andes-button__content", "css:finder"],
+        ["xpath=//button[@id=':r0:']/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Continuar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b19e1cdd-93b5-4e90-ab3f-1e851013c022",
+      "comment": "",
+      "command": "click",
+      "target": "id=hub-item-button",
+      "targets": [
+        ["id=hub-item-button", "id"],
+        ["css=#hub-item-button", "css:finder"],
+        ["xpath=//button[@id='hub-item-button']", "xpath:attributes"],
+        ["xpath=//li[@id='step-item-kyc']/div[2]/div/span/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Validar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2491aa95-5ed2-4c21-93f9-14440021fc99",
+      "comment": "",
+      "command": "click",
+      "target": "css=.andes-button__content",
+      "targets": [
+        ["css=.andes-button__content", "css:finder"],
+        ["xpath=//button[@id='start_liveness']/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Comenzar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f59fa25b-dfec-4378-a75e-bca205d04d29",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "id=DOM_FT_getReadyActionButton",
+      "targets": [
+        ["id=DOM_FT_getReadyActionButton", "id"],
+        ["css=#DOM_FT_getReadyActionButton", "css:finder"],
+        ["xpath=//button[@id='DOM_FT_getReadyActionButton']", "xpath:attributes"],
+        ["xpath=//div[@id='DOM_FT_getReadyScreen']/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continuar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed6b8081-7b97-4e8a-b762-7f4ac311f9d1",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "id=DOM_FT_getReadyScreen",
+      "targets": [
+        ["id=DOM_FT_getReadyScreen", "id"],
+        ["css=#DOM_FT_getReadyScreen", "css:finder"],
+        ["xpath=//div[@id='DOM_FT_getReadyScreen']", "xpath:attributes"],
+        ["xpath=//div[@id='DOM_FT_getReadyAndRetryScreenContainer']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5fef9563-4465-48f5-bb6a-aa613888f2d6",
+      "comment": "",
+      "command": "click",
+      "target": "id=DOM_FT_getReadyScreen",
+      "targets": [
+        ["id=DOM_FT_getReadyScreen", "id"],
+        ["css=#DOM_FT_getReadyScreen", "css:finder"],
+        ["xpath=//div[@id='DOM_FT_getReadyScreen']", "xpath:attributes"],
+        ["xpath=//div[@id='DOM_FT_getReadyAndRetryScreenContainer']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c9bbd15-1b17-4932-af47-0c7848caea64",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "id=DOM_FT_retryActionButton",
+      "targets": [
+        ["id=DOM_FT_retryActionButton", "id"],
+        ["css=#DOM_FT_retryActionButton", "css:finder"],
+        ["xpath=//button[@id='DOM_FT_retryActionButton']", "xpath:attributes"],
+        ["xpath=//div[@id='DOM_FT_retryScreen']/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Volver a intentar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f82d6242-89be-4a87-a6b9-274972ba39ac",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "id=DOM_FT_retryScreen",
+      "targets": [
+        ["id=DOM_FT_retryScreen", "id"],
+        ["css=#DOM_FT_retryScreen", "css:finder"],
+        ["xpath=//div[@id='DOM_FT_retryScreen']", "xpath:attributes"],
+        ["xpath=//div[@id='DOM_FT_getReadyAndRetryScreenContainer']/div[4]", "xpath:idRelative"],
+        ["xpath=//div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "72b7a495-f272-434f-b36e-4dfe67498427",
+      "comment": "",
+      "command": "click",
+      "target": "id=DOM_FT_retryScreen",
+      "targets": [
+        ["id=DOM_FT_retryScreen", "id"],
+        ["css=#DOM_FT_retryScreen", "css:finder"],
+        ["xpath=//div[@id='DOM_FT_retryScreen']", "xpath:attributes"],
+        ["xpath=//div[@id='DOM_FT_getReadyAndRetryScreenContainer']/div[4]", "xpath:idRelative"],
+        ["xpath=//div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f228fa8e-42d7-485c-b631-d6a6475feca0",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "id=DOM_FT_getReadyActionButton",
+      "targets": [
+        ["id=DOM_FT_getReadyActionButton", "id"],
+        ["css=#DOM_FT_getReadyActionButton", "css:finder"],
+        ["xpath=//button[@id='DOM_FT_getReadyActionButton']", "xpath:attributes"],
+        ["xpath=//div[@id='DOM_FT_getReadyScreen']/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continuar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "23f664d7-ae08-47eb-89da-6ff4c31f7320",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "id=DOM_FT_getReadyScreen",
+      "targets": [
+        ["id=DOM_FT_getReadyScreen", "id"],
+        ["css=#DOM_FT_getReadyScreen", "css:finder"],
+        ["xpath=//div[@id='DOM_FT_getReadyScreen']", "xpath:attributes"],
+        ["xpath=//div[@id='DOM_FT_getReadyAndRetryScreenContainer']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "21652ebc-349f-48c2-b3f5-ee2e28f33f88",
+      "comment": "",
+      "command": "click",
+      "target": "id=DOM_FT_getReadyScreen",
+      "targets": [
+        ["id=DOM_FT_getReadyScreen", "id"],
+        ["css=#DOM_FT_getReadyScreen", "css:finder"],
+        ["xpath=//div[@id='DOM_FT_getReadyScreen']", "xpath:attributes"],
+        ["xpath=//div[@id='DOM_FT_getReadyAndRetryScreenContainer']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0807556e-e716-4634-b71c-1a907cdbf950",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["1fd7feee-1df6-42e4-96af-1a0192a692f3"]
+  }],
+  "urls": ["https://www.mercadopago.com.mx/"],
+  "plugins": []
+}

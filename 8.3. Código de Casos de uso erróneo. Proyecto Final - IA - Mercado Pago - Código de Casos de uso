@@ -1,0 +1,67 @@
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+class MercadoPagoTests {
+
+    private RegistroUsuarioService registroUsuarioService;
+    private VerificacionCorreoService verificacionCorreoService;
+    private VerificacionSmsService verificacionSmsService;
+    private RecuperacionCuentaService recuperacionCuentaService;
+
+    @BeforeEach
+    void setUp() {
+        registrosuarioService = new RegistroUsuarioService();
+        verificacionCorreoService = new VerificacionCorreoService();
+        verificacionSmsService = new VerificacionSmsService();
+        recuperacionCuentaService = new RecuperacionCuentaService();
+    }
+
+    @Test
+    void testRegistroUsuarioExitoso() {
+        boolean resultado = registroUsuarioService.registrar("Usuario Prueba", "correo@dominio.com", "Password1!");
+        assertTrue(resultado, "El registro del usuario debería ser exitoso")
+    }
+
+    @Test
+    void testCorreoFormatoIncorrecto() {
+        boolean resultado = registroUsuarioService.registrar("Usuario Prueba", "correoIncorrecto", "Password1!");
+        assertFalse(resultado, "El sistema debería rechazar un correo con formato incorrecto");
+    }
+
+    @Test
+    void testVerificacionCorreoExitoso() {
+        boolean resultado = verificacionCorreoService.verificar("tokenValido");
+        assertTrue(resultado, "La verificación de correo debería ser exitosa");
+    }
+
+    @Test
+    void testVerificacionCorreoEnlaceExpirado() {
+        boolean resultado = verificacionCorreoService.verificar("tokenExpirado");
+        assertFalse(resultado, "El sistema debería rechazar un enlace expirado");
+    }
+
+    @Test
+    void testVerificacionSmsExitoso() {
+        boolean resultado = verificacionSmsService.verificarCodigo("123456");
+        assertTrue(resultado, "La verificación del código SMS debería ser exitosa");
+    }
+
+    @Test
+    void testVerificacionSmsCodigoIncorrecto() {
+        boolean resultado = verificacionSmsService.verificarCodigo("000000");
+        assertFalse(resultado, "El sistema debería rechazar un código SMS incorrecto");
+    }
+
+    @Test
+    void testRecuperacionCuentaCorreoRegistrado() {
+        boolean resultado = recuperacionCuentaService.recuperarCuenta("correo@dominio.com");
+        assertTrue(resultado, "La recuperación de cuenta debería ser exitosa para un correo registrado");
+    }
+
+    @Test
+    void testRecuperacionCuentaCorreoNoRegistrado() {
+        boolean resultado = recuperacionCuentaService recuperarCuenta("noexiste@dominio.com");
+        assertFalse(resultado, "El sistema debería rechazar la recuperación de cuenta para un correo no registrado");
+    }
+}

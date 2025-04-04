@@ -1,0 +1,205 @@
+{
+  "id": "6524b3d8-c033-4e74-b317-afd3904e4283",
+  "version": "2.0",
+  "name": "Mercado Pago",
+  "url": "https://www.mercadopago.com.mx",
+  "tests": [{
+    "id": "93bbc0c9-375e-43f7-b11f-6babe721afca",
+    "name": "Mercado Pago - Prueba error de Email",
+    "commands": [{
+      "id": "0dc98f30-eb70-41cd-8246-96c348e5e511",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "be2e4e73-a638-4133-bcbb-6027a49282a5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7bf79587-c77e-4075-ba28-653e16230400",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Abrir cuenta gratis",
+      "targets": [
+        ["linkText=Abrir cuenta gratis", "linkText"],
+        ["css=.nav-header-guest__link--registration", "css:finder"],
+        ["xpath=//a[contains(text(),'Abrir cuenta gratis')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://www.mercadopago.com.mx/hub/registration/landing')]", "xpath:href"],
+        ["xpath=//nav/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Abrir cuenta gratis')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c911a35-69b2-4dc0-b6ae-31b7116256f3",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[@id=':R76p:']/span/span",
+      "targets": [
+        ["xpath=//button[@id=':R76p:']/span/span", "xpath:idRelative"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "27b6a5a3-3377-4607-a367-60fb004eefd4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.andes-button__text",
+      "targets": [
+        ["css=.andes-button__text", "css:finder"],
+        ["xpath=//button[@id='hub-item-button']/span/span", "xpath:idRelative"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "72032ecc-452c-4e65-96ea-315d1b64d689",
+      "comment": "",
+      "command": "click",
+      "target": "css=.andes-form-control__control",
+      "targets": [
+        ["css=.andes-form-control__control", "css:finder"],
+        ["xpath=//div[@id=':R59:']/form/div/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1c2a673-8ca6-472d-ae1b-b8abff1f9fcf",
+      "comment": "",
+      "command": "click",
+      "target": "id=enter-email-input",
+      "targets": [
+        ["id=enter-email-input", "id"],
+        ["name=email", "name"],
+        ["css=#enter-email-input", "css:finder"],
+        ["xpath=//input[@id='enter-email-input']", "xpath:attributes"],
+        ["xpath=//div[@id=':R59:']/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e47eca7c-23f6-4f65-81b5-35b616300e6e",
+      "comment": "",
+      "command": "type",
+      "target": "id=enter-email-input",
+      "targets": [
+        ["id=enter-email-input", "id"],
+        ["name=email", "name"],
+        ["css=#enter-email-input", "css:finder"],
+        ["xpath=//input[@id='enter-email-input']", "xpath:attributes"],
+        ["xpath=//div[@id=':R59:']/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "yesterdaydjslabs@gmail.com"
+    }, {
+      "id": "8ae6ea06-ad06-4d63-b359-55946ac642b7",
+      "comment": "",
+      "command": "click",
+      "target": "id=policies",
+      "targets": [
+        ["id=policies", "id"],
+        ["name=policies", "name"],
+        ["css=#policies", "css:finder"],
+        ["xpath=//input[@id='policies']", "xpath:attributes"],
+        ["xpath=//div[@id=':R59:']/form/div[2]/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0f578fc-7be2-49ba-aca9-dfd905062894",
+      "comment": "",
+      "command": "click",
+      "target": "css=.andes-button__content",
+      "targets": [
+        ["css=.andes-button__content", "css:finder"],
+        ["xpath=//button[@id=':R1td9:']/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Continuar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd266a20-27e7-454b-be4e-b7e0962f960c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.andes-modal__overlay",
+      "targets": [
+        ["css=.andes-modal__overlay", "css:finder"],
+        ["xpath=//body/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a4a2c5d-2ee8-40bd-a94f-175f629b24e5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.andes-modal__overlay",
+      "targets": [
+        ["css=.andes-modal__overlay", "css:finder"],
+        ["xpath=//body/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bbd888b4-2940-47fd-9e84-9099d7c3d336",
+      "comment": "",
+      "command": "click",
+      "target": "css=.andes-modal__overlay",
+      "targets": [
+        ["css=.andes-modal__overlay", "css:finder"],
+        ["xpath=//body/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "badc94cf-63e3-4d6e-b6e0-70524a2553c8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.andes-modal__overlay",
+      "targets": [
+        ["css=.andes-modal__overlay", "css:finder"],
+        ["xpath=//body/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d1ca597-ffff-4576-ba9f-af5cc8631970",
+      "comment": "",
+      "command": "click",
+      "target": "css=.andes-modal__overlay",
+      "targets": [
+        ["css=.andes-modal__overlay", "css:finder"],
+        ["xpath=//body/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9045949-21df-4591-accb-dc8989b634ca",
+      "comment": "",
+      "command": "click",
+      "target": "css=.andes-modal__overlay",
+      "targets": [
+        ["css=.andes-modal__overlay", "css:finder"],
+        ["xpath=//body/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2b5a843-19af-4b24-823b-6bd8b3f4778f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.andes-modal__overlay",
+      "targets": [
+        ["css=.andes-modal__overlay", "css:finder"],
+        ["xpath=//body/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "259c3c8a-200f-4e46-ace3-d4026436a4f9",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["93bbc0c9-375e-43f7-b11f-6babe721afca"]
+  }],
+  "urls": ["https://www.mercadopago.com.mx/"],
+  "plugins": []
+}
